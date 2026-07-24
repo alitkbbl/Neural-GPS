@@ -7,9 +7,9 @@
 *using nothing but the firing patterns of its "place cells" — the brain's built-in GPS.*
 
 
-![Model](https://img.shields.io/badge/Model-Poisson%20GLM-B8860B?style=flat)
+![Model](https://img.shields.io/badge/Model-Poisson%20GLM-0F766E?style=flat)
 ![Field](https://img.shields.io/badge/Field-Computational%20Neuroscience-7C3AED?style=flat)
-![System](https://img.shields.io/badge/System-Hippocampus-8B008B?style=flat)
+![System](https://img.shields.io/badge/System-Hippocampus-A21CAF?style=flat)
 
 
 ---
