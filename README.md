@@ -32,7 +32,7 @@ achieving a reconstruction error of just **5.16 cm**.
 ## 📊 Results at a Glance
 
 <div align="center">
-  <img src="rat_mind_reading_results.png" width="850" alt="Neural GPS results: tuning curves, mutual information, PCA manifold, and Bayesian decoding.">
+  <img src="neural_gps_results.png" width="850" alt="Neural GPS results: tuning curves, mutual information, PCA manifold, and Bayesian decoding.">
 </div>
 
 The pipeline produces four complementary views of the same neural code:
@@ -116,5 +116,5 @@ pip install -r requirements.txt
 # Run the full pipeline
 python neural_gps.py
 ```
-The script runs end-to-end and saves the results figure as `rat_mind_reading_results.png`.
+The script runs end-to-end and saves the results figure as `neural_gps_results.png`.
 

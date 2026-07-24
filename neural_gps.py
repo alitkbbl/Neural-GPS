@@ -12,8 +12,9 @@ Run:
     python rat_mind_reading.py
 
 Output:
-    rat_mind_reading_results.png  
+    neural_gps_results.png  
 """
+
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -222,7 +223,7 @@ ax.legend(fontsize=8)
 fig.suptitle("Rat Mind Reading: Decoding Hippocampal Place Cells",
              fontsize=15, fontweight="bold")
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig("rat_mind_reading_results.png", dpi=150)
+plt.savefig("neural_gps_results.png", dpi=150)
 
 print(f"Phase 4 Bayesian decoding RMSE: {rmse:.3f} cm")
 print(f"Top 3 neurons by MI (descending): {mi_order[:3].tolist()}")
