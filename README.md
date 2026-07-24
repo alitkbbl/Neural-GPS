@@ -7,22 +7,17 @@
 *using nothing but the firing patterns of its "place cells" — the brain's built-in GPS.*
 
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![statsmodels](https://img.shields.io/badge/statsmodels-3C4B64?style=flat)
-![Field](https://img.shields.io/badge/Field-Computational%20Neuroscience-6A5ACD?style=flat)
+![Model](https://img.shields.io/badge/Model-Poisson%20GLM-B8860B?style=flat)
+![Field](https://img.shields.io/badge/Field-Computational%20Neuroscience-7C3AED?style=flat)
 ![System](https://img.shields.io/badge/System-Hippocampus-8B008B?style=flat)
 
-
-
-</div>
 
 ---
 
 ## 🧠 The Big Idea
 
-In 2014, the Nobel Prize in Physiology was awarded for the discovery of **place cells** — 
-neurons in the hippocampus that fire only when an animal is in a specific location. 
-Together, they form an internal map of space: the brain's own **GPS**.
+In 2014, the Nobel Prize in Physiology or Medicine recognized discoveries of the brain's spatial navigation system, including **place cells** in the hippocampus — neurons that fire preferentially when an animal occupies particular locations. Together, they help form an internal representation of space.
+
 
 **Neural GPS** asks the reverse question:
 
@@ -42,12 +37,13 @@ achieving a reconstruction error of just **5.16 cm**.
 
 The pipeline produces four complementary views of the same neural code:
 
-| Panel | What it shows | Takeaway |
-|-------|---------------|----------|
-| **① Tuning Curves** | Firing rate of each place cell vs. position | Each neuron acts as a "spotlight" for one location. |
-| **② Mutual Information** | Bits of positional info carried per cell | Cells with sharper tuning are more informative. |
-| **③ PCA Manifold** | Population activity projected to 2-D | Neural states trace a smooth ring — a low-dimensional map of space. |
-| **④ Bayesian Decoding** | True vs. decoded position | The decoder tracks the real trajectory with **RMSE ≈ 5.16 cm**. |
+
+| Panel | 📊 What It Shows | 💡 Key Takeaway |
+|-------|------------------|-----------------|
+| **1️⃣ Tuning Curves** | Firing rate of each place cell vs. position | Each neuron acts as a *"spotlight"* for one location  |
+| **2️⃣ Mutual Information** | Bits of positional info carried per cell | Cells with sharper tuning are **more informative**  |
+| **3️⃣ PCA Manifold** | Population activity projected to 2-D | Neural states trace a smooth ring — a *low-dimensional map* of space  |
+| **4️⃣ Bayesian Decoding** | True vs. decoded position | Decoder tracks the real trajectory with **`RMSE ≈ 5.16 cm`**  |
 
 > 💡 **The key insight:** high-dimensional spiking activity collapses onto a simple, 
 > continuous manifold that *mirrors the geometry of the physical world* the animal moves through.
@@ -108,16 +104,6 @@ which recovers the true trajectory to within a few centimeters.
 
 ---
 
-## 🛠️ Tech Stack
-
-- **NumPy** — vectorized simulation and linear algebra
-- **SciPy** — statistical distributions and signal processing
-- **scikit-learn** — PCA for manifold discovery
-- **statsmodels** — Poisson GLM fitting for the encoding model
-- **Matplotlib** — the 4-panel results figure
-
----
-
 ## 🚀 Quick Start
 ```bash
 # Clone the repo
@@ -131,6 +117,4 @@ pip install -r requirements.txt
 python neural_gps.py
 ```
 The script runs end-to-end and saves the results figure as `rat_mind_reading_results.png`.
-
----
 
