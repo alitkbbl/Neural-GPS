@@ -19,13 +19,20 @@
 In 2014, the Nobel Prize in Physiology or Medicine recognized discoveries of the brain's spatial navigation system, including **place cells** in the hippocampus — neurons that fire preferentially when an animal occupies particular locations. Together, they help form an internal representation of space.
 
 
-**Neural GPS** asks the reverse question:
+Neural GPS asks the reverse question:
 
-> *If we can watch these neurons fire, can we work backwards and figure out where the animal is?*
+    If we can watch these neurons fire, can we work backwards and figure out where the animal is?
 
-The answer is yes. This project simulates a rat exploring a 1-D track, generates biologically 
-plausible neural activity, and then **decodes the rat's position from spikes alone** — 
-achieving a reconstruction error of just **5.16 cm**.
+The answer is yes. This project simulates a rat exploring a 1-D track, generates biologically plausible neural activity, and then decodes the rat's position from spikes alone — achieving a reconstruction error of just 5.16 cm.
+
+---
+
+### 📖 Comprehensive Technical Reports
+For a deeper mathematical understanding of the encoding models (GLM), information theory, PCA manifold discovery, and Bayesian decoding implemented in this project, please refer to our detailed academic reports available in both English and Persian:
+
+- 📄 **[Technical Report (English Version)](ReportEN.pdf)**
+- 📄 **[Technical Report (Persian Version)](ReportFA.pdf)**
+
 
 ---
 
