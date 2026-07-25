@@ -27,7 +27,7 @@ The answer is yes. This project simulates a rat exploring a 1-D track, generates
 
 ---
 
-### 📖 Comprehensive Technical Reports
+## 📖 Comprehensive Technical Reports
 For a deeper mathematical understanding of the encoding models (GLM), information theory, PCA manifold discovery, and Bayesian decoding implemented in this project, please refer to our detailed academic reports available in both English and Persian:
 
 - 📄 **[Technical Report (English Version)](ReportEN.pdf)**
