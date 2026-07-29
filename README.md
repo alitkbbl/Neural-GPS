@@ -45,12 +45,23 @@ For a deeper mathematical understanding of the encoding models (GLM), informatio
 The pipeline produces four complementary views of the same neural code:
 
 
-| Panel | 📊 What It Shows | 💡 Key Takeaway |
-|-------|------------------|-----------------|
-| **1️⃣ Tuning Curves** | Firing rate of each place cell vs. position | Each neuron acts as a *"spotlight"* for one location  |
-| **2️⃣ Mutual Information** | Bits of positional info carried per cell | Cells with sharper tuning are **more informative**  |
-| **3️⃣ PCA Manifold** | Population activity projected to 2-D | Neural states trace a smooth ring — a *low-dimensional map* of space  |
-| **4️⃣ Bayesian Decoding** | True vs. decoded position | Decoder tracks the real trajectory with **`RMSE ≈ 5.16 cm`**  |
+## Panels Overview
+
+- **1️⃣ Tuning Curves**  
+  Shows the firing rate of each place cell across position.  
+  → Each neuron behaves like a *"spotlight"* for a specific location.
+
+- **2️⃣ Mutual Information**  
+  Quantifies how many bits of positional information each cell carries.  
+  → Cells with sharper tuning are **more informative**.
+
+- **3️⃣ PCA Manifold**  
+  Projects population activity into 2-D space.  
+  → Neural states form a smooth ring, revealing a *low-dimensional representation* of space.
+
+- **4️⃣ Bayesian Decoding**  
+  Compares true position with decoded position.  
+  → The decoder closely follows the real trajectory with **`RMSE ≈ 5.16 cm`**.
 
 > 💡 **The key insight:** high-dimensional spiking activity collapses onto a simple, 
 > continuous manifold that *mirrors the geometry of the physical world* the animal moves through.
